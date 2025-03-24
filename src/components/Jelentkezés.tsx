@@ -1,67 +1,67 @@
-import felhivas from "../assets/2felhivasRKTK2025.pdf";
-import minta from "../assets/RKTK-minta.pdf";
+import React from "react";
 
-const Jelentkezes: React.FC = () => (
-  <section className="max-w-4xl mx-auto px-6 sm:px-10 py-10 text-gray-800">
-    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center text-red-600 mb-8 sm:mb-10">
-      Jelentkezés
-    </h1>
+const Bizotsag: React.FC = () => {
+  const vezetoseg = [
+    { title: "Fővédnök", name: "Dr. Kolumbán Vilmos József", position: "Erdélyi Református Egyházkerület püspöke" },
+    { title: "Központi Bizottság Elnöke", name: "Dr. Markó Bálint", position: "Babeș-Bolyai Tudományegyetem rektorhelyettese" },
+    { title: "Központi Bizottság Ügyvezető Elnöke", name: "Dr. Kerekes Adelhaida", position: "Kolozs megyei Tanfelügyelőség, főtanfelügyelő helyettes" },
+    { title: "Központi Bizottság Alelnöke", name: "Szőcs Ildikó", position: "Bethlen Gábor Kollégium, Nagyenyed, igazgató" }
+  ];
 
-    <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-justify mb-8 sm:mb-10 text-gray-700">
-      Az alábbiakban megtaláljátok a felhívás dokumentumát, a minta dolgozatot, valamint a jelentkezési
-      űrlapot. Kérjük, alaposan olvassátok el a felhívást és tanulmányozzátok a minta dolgozatot a sikeres
-      részvétel érdekében!
-    </p>
+  const szervezok = [
+    { title: "Elnök", name: "Dr. Vörös Alpár István Vita", position: "Apáczai Csere János Elméleti Líceum, igazgató", contact: "Tel: 0264-597251, 0735-871600, E-mail: rktk2025@gmail.com" },
+    { title: "Alelnök", name: "Ghevald Júlia", position: "Apáczai Csere János Elméleti Líceum, aligazgató", contact: "Tel: 0747-030280, E-mail: gevaldjulia@gmail.com" },
+    { title: "Titkár", name: "Tóth Rudolf", position: "Apáczai Csere János Elméleti Líceum", contact: "Tel: 0748-127083, E-mail: toth.rudi14@gmail.com" }
+  ];
 
-    <div className="space-y-6 sm:space-y-8">
-      {/* Felhívás letöltése */}
-      <div className="flex items-center space-x-4 sm:space-x-6">
-        <span className="text-xl sm:text-2xl font-semibold text-gray-700">📄</span>
-        <a
-          href={felhivas}
-          download
-          className="text-lg sm:text-xl lg:text-2xl text-blue-600 hover:underline"
-        >
-          Felhívás letöltése (PDF)
-        </a>
+  const tagok = [
+    { name: "Elekes-Darabont Renáta", position: "Biológiai és környezettudományi szekció felelőse", contact: "Tel: 0755-486721, E-mail: elekes.renata95@yahoo.com " },
+    { name: "Kovács Péter", position: "Irodalom és nyelvészet szekció felelőse", contact: "Tel: 0752-184843, E-mail: kovacspeter201296@gmail.com" },
+    { name: "Bárdos László", position: "Fizika, informatika és mérnöki tudományok szekció felelőse", contact: "Tel: 0721-756942, E-mail: bardoslaszlo70@gmail.com" },
+    { name: "Lukács Lóránd", position: "Pszichológia szekció felelőse", contact: "Tel: 0729-078564, E-mail: lukacs_lorand@yahoo.com" },
+    { name: "Pócsai Sándor", position: "Történelem és néprajz szekció felelőse", contact: "Tel: 0740-588481, E-mail: indifiu@yahoo.com" },
+    { name: "Filep Judit", position: "Társadalom és kultúra szekció felelőse", contact: "Tel: 0740-616046, E-mail: filepjudit@gmail.com" },
+    { name: "Jakab Antal Géza", position: "Szállás és étkezés felelőse", contact: "Tel: 0747-243624, E-mail: jakabantal@gmail.com" },
+    { name: "Fehér Judit", position: "Protokoll felelős", contact: "Tel: 0740-035178, E-mail: fjutka75@gmail.com" }
+  ];
+
+  return (
+    <section className="max-w-7xl mx-auto p-6 text-gray-800">
+      <h2 className="text-3xl font-bold text-center mt-10 text-red-600">A konferencia elnöksége</h2>
+      
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        {vezetoseg.map((vezeto, index) => (
+          <div key={index} className="mb-4 border-b pb-4 last:border-b-0">
+            <h2 className="text-2xl font-bold text-red-600">{vezeto.title}</h2>
+            <p className="text-lg text-gray-600">{vezeto.name} - {vezeto.position}</p>
+          </div>
+        ))}
       </div>
 
-      {/* Minta dolgozat letöltése */}
-      <div className="flex items-center space-x-4 sm:space-x-6">
-        <span className="text-xl sm:text-2xl font-semibold text-gray-700">📘</span>
-        <a
-          href={minta}
-          download
-          className="text-lg sm:text-xl lg:text-2xl text-blue-600 hover:underline"
-        >
-          Minta dolgozat letöltése (PDF)
-        </a>
+      <h2 className="text-3xl font-bold text-center mt-10 text-red-600">A konferencia szervező bizottságának elnöksége</h2>
+      <div className="mt-4 bg-gray-50 p-6 rounded-lg shadow-md">
+        {szervezok.map((szervezo, index) => (
+          <div key={index} className="mb-4 border-b pb-4 last:border-b-0">
+            <h2 className="text-2xl font-bold text-red-600">{szervezo.title}</h2>
+            <p className="text-lg text-gray-600">{szervezo.name} - {szervezo.position}</p>
+            <p className="text-sm text-gray-500 italic">{szervezo.contact}</p>
+          </div>
+        ))}
       </div>
 
-      {/* Jelentkezési Google Űrlap */}
-      <div className="flex items-center space-x-4 sm:space-x-6">
-        <span className="text-xl sm:text-2xl font-semibold text-gray-700">📝</span>
-        <a
-          href="https://shorturl.at/GNfCx"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-lg sm:text-xl lg:text-2xl text-blue-600 hover:underline"
-        >
-          Jelentkezési űrlap kitöltése (Google Form)
-        </a>
+      <h2 className="text-3xl font-bold text-center mt-10 text-red-600">A konferencia szervező bizottságának tagjai</h2>
+      <div className="mt-4 bg-white p-6 rounded-lg shadow-md">
+        {tagok.map((tag, index) => (
+          <div key={index} className="mb-4 border-b pb-4 last:border-b-0">
+            <h2 className="text-2xl font-bold text-red-600">{tag.name}</h2>
+            <p className="text-lg text-gray-600">{tag.position}</p>
+            <p className="text-sm text-gray-500 italic">{tag.contact}</p>
+          </div>
+        ))}
       </div>
-    </div>
 
-    <p className="mt-8 sm:mt-12 text-lg sm:text-xl lg:text-2xl text-gray-700 text-justify">
-      Kérdés esetén keressetek minket az alábbi e-mail címen:{" "}
-      <a
-        href="mailto:rktk2025@gmail.com"
-        className="text-blue-600 hover:underline"
-      >
-        rktk2025@gmail.com
-      </a>.
-    </p>
-  </section>
-);
+    </section>
+  );
+};
 
-export default Jelentkezes;
+export default Bizotsag;

@@ -18,7 +18,7 @@ const App: React.FC = () => {
     { name: "Szekciók", path: "/szekciok", component: Szekciok },
     { name: "Bizottságok", path: "/bizottsagok", component: Bizotsag },
     { name: "Program", path: "/program", component: Program },
-    { name: "Jelentkezés", path: "/jelentkezes", component: Jelentkezes },
+    { name: "Szervezők", path: "/szervezok", component: Jelentkezes },
     { name: "Apáczai 400", path: "/apaczai400", component: Apaczai400 },
     { name: "Partnerek és támogatók", path: "/tamogatok", component: Partnerek },
   ];

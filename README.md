@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# React Committee App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that displays information about different committees and their members.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before running the project, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (Recommended version: latest LTS)
+- [npm](https://www.npmjs.com/) (Comes with Node.js)
+- [Vite](https://vitejs.dev/) (Used for fast development and bundling)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   cd <project-folder>
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## Running the Application
+
+To start the development server with Vite, run:
+```sh
+npm run dev
+```
+This will launch the application in development mode, and you can access it at `http://localhost:5173` (or another port if specified by Vite).
+
+## Libraries Used
+
+This project uses the following libraries:
+- `react`: JavaScript library for building user interfaces
+- `react-router-dom`: Enables client-side routing
+- `lucide-react`: Provides icons, such as `Menu` and `X`
+- `vite`: A fast build tool for modern web projects
+
+## Folder Structure
+
+```
+📂 project-folder
+├── 📁 src
+│   ├── 📁 components     # Reusable components like CommitteeCard
+│   ├── 📁 pages          # Different page components
+│   ├── App.tsx          # Main App component
+│   ├── main.tsx         # Entry point for the React app
+├── package.json         # Dependencies and scripts
+├── vite.config.ts       # Vite configuration
+├── README.md            # This file
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Building for Production
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+To build the project for production, run:
+```sh
+npm run build
 ```
+This will generate an optimized build in the `dist/` folder.
+
+## License
+
+This project is open-source. Modify and use it as needed.
+
+---
+If you encounter any issues, feel free to open an issue or contribute to the project!
+

@@ -20,13 +20,16 @@ const Szekciok: React.FC = () => {
     {
       title: "Történelem és néprajz",
       participants: [
-        {project: ",,Régi szokás szerint…” Szakrális tradíciók a homoródalmási unitáriusok körében", name: "Kenyeres Mátyás", secondName: "", teacher: "Csonta Noémi", school: "Márton Áron Főgimnázium" },
-        {project: "Asszonysors a vajdahunyadi bukovinai székelyek körében", name: "Gergely Albert", secondName: "", teacher: "Selyem Tünde", school: "János Zsigmond Unitárius Kollégium" },
-        {project: "A néptánc és népzene szerepének változása Vajdakamarás közösségi életében", name: "Székely Tivadar", secondName: "", teacher: "Selyem Tünde", school: "János Zsigmond Unitárius Kollégium" },
-        {project: "Egy néptánccsoport születése és küldetése", name: "Kovács Barbara-Henrietta", secondName: "Héjja Beáta", teacher: "Dr. Deák Ferenc Lóránd", school: "Bod Péter Tanítóképző" },
-        {project: "Fény a sötétségben", name: "Olah Anna", secondName: "", teacher: "Fodor Enikő", school: "Bartók Béla Elméleti Líceum" },
-        {project: "Paradigmaváltás a Tamási Áron Színházban", name: "Ciuraru Daniela", secondName: "Timár Eszter", teacher: "Dr. Deák Ferenc Lóránd", school: "Bod Péter Tanítóképző" },        
-      ]
+        {project: "„Régi szokás szerint…” Szakrális tradíciók a homoródalmási unitáriusok körében",name: "Kenyeres Mátyás",secondName: "",teacher: "Csonta Noémi",school: "Márton Áron Főgimnázium, Csíkszereda",},
+        {project: "Asszonysors a vajdahunyadi bukovinai bukovinai székelyek körében",name: "Gergely Albert",secondName: "",teacher: "Selyem Tünde",school: "János Zsigmond Unitárius Kollégium, Kolozsvár",},
+        {project: "A néptánc és népzene szerepének változása Vajdakamarás közösségi életében",name: "Székely Tivadar",secondName: "",teacher: "Selyem Tünde",school: "János Zsigmond Unitárius Kollégium, Kolozsvár",},
+        {project: "Egy néptánccsoport születése és küldetése",name: "Kovács Barbara-Henrietta",secondName: "Héjja Beáta",teacher: "Dr. Deák Ferenc Lóránd",school: "Bod Péter Tanítóképző Líceum, Kézdivásárhely",},
+        {project: "Erdélyi diákok peregrinációja nyugati egyetemekre a középkorban és a koraújkorban",name: "Kovács Tibor",secondName: "",teacher: "Jakab Antal Géza",school: "Apáczai Csere János Elméleti Líceum, Kolozsvár",},
+        {project: "Diákfegyelmezés a Marosvásárhelyi Református Kollégiumban a 19–20. század fordulóján",name: "László Blanka",secondName: "Zsidó Emese Tímea",teacher: "Hajdú Zoltán",mentor: "Berekméri Árpád-Róbert",school: "Bolyai Farkas Elméleti Líceum, Marosvásárhely",},
+        {project: "Nagy Gyula bérháza - A kezdetektől napjainkig",name: "Lăzău Alexandra Larisa",secondName: "Szabó Ádám Alex",teacher: "Otohál Ottó Levente",school: "Arany János Elméleti Líceum, Nagyszalonta",},
+        {project: "Fény a sötétségben",name: "Olah Anna",secondName: "",teacher: "Fodor Enikő",school: "Bartók Béla Elméleti Líceum, Temesvár",},
+        {project: "Paradigmaváltás a Tamási Áron Színházban",name: "Ciuraru Daniela",secondName: "Timár Eszter",teacher: "Dr. Deák Ferenc Lóránd",school: "Bod Péter Tanítóképző Líceum, Kézdivásárhely",},
+      ],
     },
     {
       title: "Pszichológia",
@@ -46,12 +49,14 @@ const Szekciok: React.FC = () => {
       title: "Társadalom és kultúra",
       participants: [
         {project: "Amire az irodalomtanárok nem mindig képesek, azt megoldja majd a TikTok: a #BookTok hatása az olvasási szokásokra", name: "Kerekes Dóra", secondName: "", teacher: "Nagy Egon", school: "Bethlen Gábor Kollégium" },
+        {project: "Olvasási szokások: eredeti nyelven vagy más nyelvekre lefordítva?", name: "Kerekes Dávid", secondName: "Lakatos Ana-Maria ", teacher: "Nagy Egon", school: "Bethlen Gábor Kollégium" },
         {project: "Feledésből a köztudatba – Kapcsolati pontok a diákság és Kőrösi Csoma Sándor élete között", name: "Varga Áron", secondName: "Kiss Boglárka", teacher: "Fodor Brigitta", school: "Bethlen Gábor Kollégium" },
         {project: "Irodalomoktatás a romániai magyar közoktatásban ", name: "Kovács Hunor", secondName: "", teacher: "Dr. Rancz Teréz ", school: "Nagy Mózes Főgimnázium" },
         {project: "Jövőkép és karrierálmok külföldön vagy belföldön? Középiskolások továbbtanulási döntései", name: "Ferencz Kincső", secondName: "Ráduly Szilárd", teacher: "Dr. Tódor Imre", school: "Márton Áron Főgimnázium" },
         {project: "A romániai elektromos áram piacának partikularitása a holtteher veszteség tükrében", name: "Bálint Csongor", secondName: "", teacher: "Bálint Csaba", school: "Tamási Áron Elméleti Líceum" },
         {project: "A múzeum, ami túlélt háborúkat: A Gelei József múzeum kronológiája", name: "Gazda Imola Flóra", secondName: "", teacher: "Szekernyés Réka", school: "János Zsigmond Unitárius Kollégium" },
         {project: "Generációk a munkahelyen: munkamorál és a munkával kapcsolatos életfelfogás vizsgálata", name: "Barabás Evelin", secondName: "", teacher: "Incze Erika", school: "Bartók Béla Elméleti Líceum" },
+        {project: "A logikus gondolkodás és a matematika összefüggése", name: "Madarász Rita", secondName: "", teacher: "Selyem Edit", school: "Salamon Ernő Elméleti Líceum" },
         
       ]
     },
@@ -72,7 +77,6 @@ const Szekciok: React.FC = () => {
       participants: [
         {project: "Hidrogénes energiatárolás", name: "Gáll Ádám", secondName: "Szőcs Balázs", teacher: "Szász Ágota Judit", school: "Bolyai Farkas Elméleti Líceum" },
         {project: "Az elektromágnesben fellépő kölcsönhatások vizsgálata", name: "Nagy David Kristof", secondName: "", teacher: "Viorel Mititean", school: "Emanuil Gojdu Főgimnázium" },
-        {project: "A logikus gondolkodás és a matematika összefüggése", name: "Madarász Rita", secondName: "", teacher: "Selyem Edit", school: "Salamon Ernő Elméleti Líceum" },
         {project: "Smart Pill Dispenser", name: "Sütő Anna Ágota", secondName: "Dezső Janka", teacher: "Geváld Júlia", school: "Apáczai Csere János Elméleti Líceum" },
         {project: "Elektromágneses tenger", name: "Hadnagy Anita", secondName: "Varga Vivien Hanna", teacher: "Herczeg Ágnes", school: "János Zsigmond Unitárius Főgimnázium" },
         {project: "Aqua Robot", name: "Tesnádi Tamás", secondName: "", teacher: "Geváld Júlia", school: "Apáczai Csere János Elméleti Líceum" },
