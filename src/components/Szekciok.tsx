@@ -21,7 +21,7 @@ const Szekciok: React.FC = () => {
       title: "Történelem és néprajz",
       participants: [
         {project: "„Régi szokás szerint…” Szakrális tradíciók a homoródalmási unitáriusok körében",name: "Kenyeres Mátyás",secondName: "",teacher: "Csonta Noémi",school: "Márton Áron Főgimnázium, Csíkszereda",},
-        {project: "Asszonysors a vajdahunyadi bukovinai bukovinai székelyek körében",name: "Gergely Albert",secondName: "",teacher: "Selyem Tünde",school: "János Zsigmond Unitárius Kollégium, Kolozsvár",},
+        {project: "Asszonysors a vajdahunyadi bukovinai székelyek körében",name: "Gergely Albert",secondName: "",teacher: "Selyem Tünde",school: "János Zsigmond Unitárius Kollégium, Kolozsvár",},
         {project: "A néptánc és népzene szerepének változása Vajdakamarás közösségi életében",name: "Székely Tivadar",secondName: "",teacher: "Selyem Tünde",school: "János Zsigmond Unitárius Kollégium, Kolozsvár",},
         {project: "Egy néptánccsoport születése és küldetése",name: "Kovács Barbara-Henrietta",secondName: "Héjja Beáta",teacher: "Dr. Deák Ferenc Lóránd",school: "Bod Péter Tanítóképző Líceum, Kézdivásárhely",},
         {project: "Erdélyi diákok peregrinációja nyugati egyetemekre a középkorban és a koraújkorban",name: "Kovács Tibor",secondName: "",teacher: "Jakab Antal Géza",school: "Apáczai Csere János Elméleti Líceum, Kolozsvár",},
@@ -33,7 +33,7 @@ const Szekciok: React.FC = () => {
       ],
     },
     {
-      title: "Pszichológia",
+      title: "Pszichológia és pedagógia",
       participants: [
         {project: "Digitális fogyasztás és szociabilitás a Covid tükrében", name: "Henter Jónás", secondName: "Szabó Kristóf", teacher: "Márton Csilla", school: "Marosvásárhelyi Református Kollégium" },
         {project: "A SZAMOSÚJVÁRI MAGYAR TANNYELVŰ OKTATÁSBAN RÉSZTVEVŐ KÖZÉPISKOLÁS DIÁKOK SZABADIDŐTÖLTÉSI SZOKÁSAI", name: "Fodor Nóra", secondName: "Vigh Nikol-Vivien", teacher: "Pávai Eugén", school: "Kemény Zsigmond Elméleti Líceum" },
@@ -85,15 +85,15 @@ const Szekciok: React.FC = () => {
         
       ]
     },
-    // További szekciók...
+    
   ];
 
   const handleSectionClick = (index: number) => {
-    setOpenSectionIndex(openSectionIndex === index ? null : index); // Toggle between opening and closing
+    setOpenSectionIndex(openSectionIndex === index ? null : index); 
   };
 
   const handleCloseSection = () => {
-    setOpenSectionIndex(null); // Close the current open section
+    setOpenSectionIndex(null);
   };
   
 
@@ -109,7 +109,7 @@ const Szekciok: React.FC = () => {
             title={section.title}
             participants={section.participants}
             isOpen={openSectionIndex === index}
-            onClick={() => handleSectionClick(index)} // Trigger the section open/close
+            onClick={() => handleSectionClick(index)}
             onClose={handleCloseSection}
           />
         ))}

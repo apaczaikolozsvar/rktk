@@ -29,7 +29,7 @@ const Bizotsag: React.FC = () => {
       ]
     },
     {
-      title: "Pszichológia szekció:",
+      title: "Pszichológia és pedagógia szekció:",
       members: [
         { name: "dr. Tamás Borbála", position: "adjunktus, Babeş–Bolyai Tudományegyetem, Pszichológia és Neveléstudományi Kar" },
         { name: "drd. Rusu Szidónia", position: "Babeş–Bolyai Tudományegyetem, Magyar Szociológia és Szociális Munka Intézet" },
@@ -55,7 +55,7 @@ const Bizotsag: React.FC = () => {
 
       ]
     },
-    // További bizottságok...
+    
   ];
 
   return (
