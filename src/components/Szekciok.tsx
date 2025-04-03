@@ -29,6 +29,7 @@ const Szekciok: React.FC = () => {
         {project: "Nagy Gyula bérháza - A kezdetektől napjainkig",name: "Lăzău Alexandra Larisa",secondName: "Szabó Ádám Alex",teacher: "Otohál Ottó Levente",school: "Arany János Elméleti Líceum, Nagyszalonta",},
         {project: "Fény a sötétségben",name: "Olah Anna",secondName: "",teacher: "Fodor Enikő",school: "Bartók Béla Elméleti Líceum, Temesvár",},
         {project: "Paradigmaváltás a Tamási Áron Színházban",name: "Ciuraru Daniela",secondName: "Timár Eszter",teacher: "Dr. Deák Ferenc Lóránd",school: "Bod Péter Tanítóképző Líceum, Kézdivásárhely",},
+        {project: "Legendák nyomában a nagykárolyi régióban",name: "Drágos Rolland Gabriel",secondName: "",teacher: "Mențiu Gabriella",school: "Nagykárolyi Elméleti Líceum",},
       ],
     },
     {
