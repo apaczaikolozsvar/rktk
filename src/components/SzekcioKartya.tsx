@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 interface SectionCardProps {
   title: string;
+  isOpen: boolean;
+  onClose: () => void; 
+  onClick: () => void;
   participants: { name: string; secondName?: string; teacher: string; school: string; project: string }[];
 }
 

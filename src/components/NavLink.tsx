@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const NavLink: React.FC<{ path: string; children: React.ReactNode }> = ({ path, children }) => {
     const location = useLocation();
