@@ -2,7 +2,7 @@
   "name": "rtkt",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://tothrudolf.github.io/rktk/",
+  "homepage": "https://apaczaikolozsvar.github.io/rktk/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
