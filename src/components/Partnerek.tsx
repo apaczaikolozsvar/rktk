@@ -39,7 +39,7 @@ const Tamogatok: React.FC = () => {
       { name: "", logo: kroni },
       { name: "", logo: transtelex },
       { name: "", logo: maszol },
-      { name: "", logo:  tvr},
+      { name: "  ", logo:  tvr},
       { name: "", logo:  agnus},
       { name: "", logo:  radio},
       { name: "", logo:  paprika},
