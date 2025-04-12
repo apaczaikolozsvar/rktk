@@ -11,6 +11,7 @@ import Jelentkezes from "./components/Jelentkezés";
 import Apaczai400 from "./components/Apaczai400";
 import Partnerek from "./components/Partnerek";
 import Eredmenyek from "./components/Eredmenyek";
+import Galeria from "./components/Galeria";
 
 const App: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,8 +22,10 @@ const App: React.FC = () => {
     { name : "Eredmények", path: "/eredmenyek", component: Eredmenyek },
     { name: "Program", path: "/program", component: Program },
     { name: "Szervezők", path: "/szervezok", component: Jelentkezes },
+    { name: "Galéria", path: "/galeria", component: Galeria },
     { name: "Apáczai 400", path: "/apaczai400", component: Apaczai400 },
     { name: "Partnerek és támogatók", path: "/tamogatok", component: Partnerek },
+    
   ];
 
   return (
