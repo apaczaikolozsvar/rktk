@@ -1,5 +1,5 @@
 // Gallery.tsx
-import React, { useState } from "react";
+import  { useState } from "react";
 import img1 from "../assets/kepek/1.jpg";
 import img2 from "../assets/kepek/2.jpg";
 import img3 from "../assets/kepek/3.jpg";
