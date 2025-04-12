@@ -10,6 +10,7 @@ import NavLink from "./components/NavLink";
 import Jelentkezes from "./components/Jelentkezés";
 import Apaczai400 from "./components/Apaczai400";
 import Partnerek from "./components/Partnerek";
+import Eredmenyek from "./components/Eredmenyek";
 
 const App: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +18,7 @@ const App: React.FC = () => {
     { name: "Köszöntő", path: "/", component: Koszonto },
     { name: "Szekciók", path: "/szekciok", component: Szekciok },
     { name: "Bizottságok", path: "/bizottsagok", component: Bizotsag },
+    { name : "Eredmények", path: "/eredmenyek", component: Eredmenyek },
     { name: "Program", path: "/program", component: Program },
     { name: "Szervezők", path: "/szervezok", component: Jelentkezes },
     { name: "Apáczai 400", path: "/apaczai400", component: Apaczai400 },
